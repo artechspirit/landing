@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "npx @tailwindcss/cli -i ./src/assets/css/input.css -o ./src/assets/css/output.css --watch",
-    "build": "npx tailwindcss/cli -i ./src/assets/css/input.css -o ./src/assets/css/output.css --minify"
+    "build": "npx tailwindcss -i ./src/assets/css/input.css -o ./dist/assets/css/output.css --minify && node build.js"
   },
   "author": "Beta Priyoko <artechspirit@gmail.com>",
   "license": "ISC",

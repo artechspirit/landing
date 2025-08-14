@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+.container {
+  @apply mx-auto;
+}
+
  /* Custom tailwind config for hover scale effect */
 .image-hover:hover {
   transform: scale(1.05);
@@ -18,9 +22,14 @@
   background-color: rgba(0,0,0,0.8);
 }
 .modal-content {
-  margin: 10% auto;
-  display: block;
-  max-width: 90%;
+  max-height: 90vh;
+  object-fit: contain;
+  position: fixed;
+  z-index: 51;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ 
 }
 .close {
   position: absolute;
